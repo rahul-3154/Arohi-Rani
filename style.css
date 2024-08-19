@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+ box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  
+}
+.container{
+    height: 100%;
+    max-width: 3500px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+ .container h1{
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 3rem;
+    margin-bottom: 100px;
+    color: rgb(243, 191, 124);
+}
+.gallary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+.card{
+    width: 19%;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.card img{
+    width: 100%;
+    filter: grayscale(100%);
+    box-shadow: 0 0 20px #333;
+    height: 100%;
+    object-fit: cover;
+  
+}
+.card:hover img{
+    filter: grayscale(0%);
+    /* filter: blur(5px); */
+}
+.card:hover{
+    transform: scale(1.70);
+    transition:0.5s ;
+    filter: drop-shadow(0 0 20px #333);
+    z-index: 2;
+
+}
+.card figcaption{
+    position:relative ;
+    bottom: 100%;
+    padding: 15px;
+    width: 100%;
+    height: 10%;
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: 3px;
+
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    opacity:0;
+    /* border-radius: 0 0 10px 10px; */
+    /* background:linear-gradient(0deg rgba(0 ,0, 0, 0.5) ,rgba(255, 255 ,255 ,0)100%); */
+    transition: 0.3s;
+}
+.card:hover figcaption{
+    color: aqua;
+    opacity: 1;
+    filter: brightness(200%);
+      font-size: 30px;
+    /* transition: scale(5.03); */
+}
